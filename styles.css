@@ -1,0 +1,108 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Container */
+.container {
+  height: 100%;
+  background: rgba(0,0,0,0.5); /* dark overlay */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
+.nav-buttons .btn {
+  margin-left: 15px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.sign-in {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.sign-in:hover {
+  background: white;
+  color: black;
+}
+
+.sign-up {
+  background: #ff7f50;
+  color: white;
+}
+
+.sign-up:hover {
+  background: #ff6347;
+}
+
+/* Main section */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+main h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+}
+
+main p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  max-width: 600px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+.main-cta {
+  background: #1e90ff;
+  color: white;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.main-cta:hover {
+  background: #187bcd;
+}
